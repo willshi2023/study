@@ -17,5 +17,6 @@
 
 	<modules>
 		<module>jwt</module>
+		<module>springboot-demo</module>
 	</modules>
 </project>
