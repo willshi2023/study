@@ -18,5 +18,6 @@
 		<module>springboot-demo</module>
 		<module>emq</module>
     <module>docker</module>
+    <module>websocket</module>
   </modules>
 </project>
