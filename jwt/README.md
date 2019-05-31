@@ -1,3 +1,6 @@
-jwt的使用
-访问接口需要带上token，在请求头里面增加一个header：Authorization，值为token，token是从login里面登录获取的
+jwt的使用 
+
+访问接口需要带上token，在请求头里面增加一个header：Authorization，值为token，token是从login里面登录获取的 
+
 可以通过设置com.study.jwt.service.filter.JwtFilter.initAnonymousPaths()方法，添加自定义免token的接口，比如swaggerui可以无需token访问
+
