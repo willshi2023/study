@@ -77,6 +77,34 @@ public class EMQUtil {
 	}
 	
 	/**
+	 * 自定义监听请求数据的方法
+	 * @param userName
+	 * @param passWord
+	 * @param host
+	 * @param clientid
+	 * @param mqttCallback
+	 * @return
+	 * @throws MqttException
+	 * @throws MqttSecurityException
+	 */
+	public static MqttClient connect(String userName, String passWord, String host, String clientid,MqttCallback mqttCallback)
+			throws MqttException, MqttSecurityException {
+		MqttClient client = new MqttClient(host, clientid, new MemoryPersistence());
+		MqttConnectOptions options = new MqttConnectOptions();
+		options.setCleanSession(false);
+		options.setUserName(userName);
+		options.setPassword(passWord.toCharArray());
+		// 设置超时时间
+		options.setConnectionTimeout(10);
+		// 设置会话心跳时间
+		options.setKeepAliveInterval(20);
+		client.setCallback(mqttCallback);
+		client.connect(options);
+		return client;
+	}
+			
+	
+	/**
 	 * 订阅消息
 	 * @param userName
 	 * @param passWord
