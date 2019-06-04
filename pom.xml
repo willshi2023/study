@@ -19,5 +19,6 @@
 		<module>emq</module>
     <module>docker</module>
     <module>websocket</module>
+    <module>eureka</module>
   </modules>
 </project>
