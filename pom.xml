@@ -20,5 +20,6 @@
     <module>docker</module>
     <module>websocket</module>
     <module>eureka</module>
+    <module>dubbo</module>
   </modules>
 </project>
