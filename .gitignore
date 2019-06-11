@@ -13,3 +13,7 @@ dubbo/dubbo-consumer/target/classes/dubbo-consumer.xml
 dubbo/dubbo-consumer/target/classes/META-INF/maven/com.study/dubbo-consumer/pom.xml
 dubbo/dubbo-provider/target/classes/dubbo-provider.xml
 dubbo/dubbo-provider/target/classes/META-INF/maven/com.study/dubbo-provider/pom.xml
+eureka/eureka-balance/target/classes/META-INF/maven/com.study/eureka-balance/pom.properties
+eureka/eureka-server/target/classes/META-INF/maven/com.study/eureka-server/pom.properties
+eureka/eureka-service-test1/target/classes/META-INF/maven/com.study/eureka-service-test1/pom.properties
+eureka/eureka-service-test2/target/classes/META-INF/maven/com.study/eureka-service-test2/pom.properties
