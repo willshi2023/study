@@ -5,4 +5,11 @@
 *.project
 *.prefs
 *.lst
-pom.properties
+dubbo/dubbo-consumer/target/classes/META-INF/maven/com.study/dubbo-consumer/pom.properties
+dubbo/dubbo-provider/target/classes/META-INF/maven/com.study/dubbo-provider/pom.properties
+dubbo/dubbo-api/target/classes/META-INF/maven/com.study/dubbo-api/pom.xml
+dubbo/dubbo-api/target/classes/META-INF/maven/com.study/dubbo-api/pom.properties
+dubbo/dubbo-consumer/target/classes/dubbo-consumer.xml
+dubbo/dubbo-consumer/target/classes/META-INF/maven/com.study/dubbo-consumer/pom.xml
+dubbo/dubbo-provider/target/classes/dubbo-provider.xml
+dubbo/dubbo-provider/target/classes/META-INF/maven/com.study/dubbo-provider/pom.xml
