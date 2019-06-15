@@ -17,3 +17,7 @@ eureka/eureka-balance/target/classes/META-INF/maven/com.study/eureka-balance/pom
 eureka/eureka-server/target/classes/META-INF/maven/com.study/eureka-server/pom.properties
 eureka/eureka-service-test1/target/classes/META-INF/maven/com.study/eureka-service-test1/pom.properties
 eureka/eureka-service-test2/target/classes/META-INF/maven/com.study/eureka-service-test2/pom.properties
+eureka/eureka-balance/target/classes/META-INF/maven/com.study/eureka-balance/pom.properties
+eureka/eureka-server/target/classes/META-INF/maven/com.study/eureka-server/pom.properties
+eureka/eureka-service-test1/target/classes/META-INF/maven/com.study/eureka-service-test1/pom.properties
+eureka/eureka-service-test2/target/classes/META-INF/maven/com.study/eureka-service-test2/pom.properties
