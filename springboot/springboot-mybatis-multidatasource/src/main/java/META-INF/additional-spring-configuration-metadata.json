@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "spring.datasource.test1",
+    "type": "java.util.Map<java.lang.String,java.lang.String>",
+    "description": "A description for 'spring.datasource.test1'"
+  },
+  {
+    "name": "spring.datasource.test2",
+    "type": "java.util.Map<java.lang.String,java.lang.String>",
+    "description": "A description for 'spring.datasource.test2'"
+  }
+]}

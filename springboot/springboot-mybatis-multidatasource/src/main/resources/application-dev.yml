@@ -1,0 +1,21 @@
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  datasource:
+    test1:
+      url: jdbc:mysql://localhost:3306/test1?useUnicode=true&characterEncoding=UTF-8&useSSL=true
+      username: root
+      password: 
+      driver-class-name: com.mysql.jdbc.Driver
+    test2:
+      url: jdbc:mysql://localhost:3306/test2?useUnicode=true&characterEncoding=UTF-8&useSSL=true
+      username: root
+      password: 
+      driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+server:
+  port: 8085
+  context-path: /multidatasource

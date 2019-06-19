@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.springboot.mybatis.multidatasource.mapper.test1.User1Mapper">
+	<!-- 根据id查找用户名 -->
+	<select id="getUsernameById" resultType="java.lang.String">
+		select name from user where id=#{id,jdbcType=INTEGER}
+	</select>
+</mapper>
