@@ -6,6 +6,8 @@ jwt由三部分组成，前面两个部分是base编码的明文，第一部分�
 
 第三部分是对前面做的一个签名，用用户的密码作为秘钥，签名后如果别人篡改了数据不生成签名则校验不通过，如果篡改了数据并且伪造了一个签名则由于黑客无法知道用户的密码，所以造出来的签名时使用的秘钥和校验时不匹配（因为服务器的秘钥来自数据库），也无法校验通过，以此达到数据的安全性
 
+![jwt的组成](https://github.com/qq1623299667/study/blob/master/jwt/src/main/resources/image/jwt%E7%BB%84%E6%88%90%E7%BB%93%E6%9E%84.png)
+
 jwt的使用 
 
 访问接口需要带上token，在请求头里面增加一个header：Authorization，值为token，token是从login里面登录获取的 
