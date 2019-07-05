@@ -16,19 +16,6 @@ import ch.ethz.ssh2.SCPOutputStream;
  *
  */
 public class SSHService {
-	static String ip = "192.168.0.162";
-	static Integer port = 22;
-	static String name = "qinz";
-	static String password = "1";
-	static String remoteFile = "baishikele_600-r_0_2.jpg";
-	static String remoteTargetDirectory = "/share/data1/fastup/test";
-	static String newPath = "C:\\Users\\shijia\\Desktop\\";
-
-	public static void main(String[] args) {
-		File f = new File("test.txt");
-		uploadFile(ip, port, name, password, f, remoteTargetDirectory, null);
-	}
-
 	/**
 	 * 下载文件
 	 * 
@@ -117,4 +104,5 @@ public class SSHService {
 			}
 		}
 	}
+	
 }
