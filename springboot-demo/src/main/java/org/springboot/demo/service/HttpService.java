@@ -173,5 +173,8 @@ public class HttpService {
 		param.put("name", "张三");
 		String result3 = postJson(url, param);
 		System.out.println(result3);
+		url = "http://localhost:8080/http/get";
+		String result4 = get(url);
+		System.out.println(result4);
 	}
 }
