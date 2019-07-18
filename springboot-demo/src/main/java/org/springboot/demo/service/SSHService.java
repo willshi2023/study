@@ -72,7 +72,7 @@ public class SSHService {
 	 * @param password
 	 * @param f
 	 * @param remoteTargetDirectory
-	 * @param mode                  默认为null,源码会自动设置成0600，表示owner的读写权限，无执行权限
+	 * @param mode                  默认为null,源码会自动设置成0600，表示owner的读写权限，无执行权限。如果需要权限，可以设置成0777
 	 */
 	public static void uploadFile(String ip, Integer port, String name, String password, File f,
 			String remoteTargetDirectory, String mode) {
