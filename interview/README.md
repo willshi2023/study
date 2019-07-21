@@ -12,6 +12,8 @@
 
 3. 行为型模式：用于描述类或对象之间怎样相互协作共同完成单个对象都无法单独完成的任务，以及怎样分配职责。GoF 中提供了模板方法、策略、命令、职责链、状态、观察者、中介者、迭代器、访问者、备忘录、解释器等 11 种行为型模式。
 
+![](https://github.com/qq1623299667/study/blob/master/interview/src/main/resources/image/23%E7%A7%8D%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F%E7%9A%84%E4%B8%89%E4%B8%AA%E5%88%86%E7%B1%BB.png)
+
 GoF的23种设计模式的功能
 
 前面说明了 GoF 的 23 种设计模式的分类，现在对各个模式的功能进行介绍。
