@@ -6,7 +6,8 @@ public class TestGenericWildcardCharacter2 {
 		GenericWildcardCharacter<Integer> genericWildcardCharacter2 = new GenericWildcardCharacter<Integer>(456);
 		showKeyValue(genericWildcardCharacter1);
 		showKeyValue(genericWildcardCharacter2);
-//		GenericWildcardCharacter<Integer> genericWildcardCharacter3 = new GenericWildcardCharacter<Integer>("789");
+//		GenericWildcardCharacter<?> genericWildcardCharacter3 = new GenericWildcardCharacter<String>("789");
+//		showKeyValue(genericWildcardCharacter3);
 	}
 	
 	
