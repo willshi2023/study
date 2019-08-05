@@ -45,6 +45,7 @@ public class UserServiceImpl implements UserService {
 	    findById(t+0L);
 	    insertUser("huangxl","abc123");
 	}
+	
 	@Transactional
 	public int insertUser(String name, String password) {
 	    User user = new User();

@@ -8,4 +8,8 @@
 	<insert id="insertEntity">
 		insert into user(username,password) values(#{user.username,jdbcType=VARCHAR},#{user.password,jdbcType=VARCHAR})
 	</insert>
+	
+	<update id="updateUserPassWord">
+		update user set password = #{password,jdbcType=VARCHAR} where id=#{id,jdbcType=BIGINT}
+	</update>
 </mapper>
