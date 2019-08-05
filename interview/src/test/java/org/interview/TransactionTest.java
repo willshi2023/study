@@ -96,4 +96,12 @@ public class TransactionTest {
 	public void testNotSupported2() {
 		transactionTestService.testNotSupported2();
 	}
+	
+	/**
+	 * MANDATORY：支持当前事务，如果没有事务则报错
+	 */
+	@Test
+	public void testMandatory() {
+		transactionTestService.testMandatory();
+	}
 }

@@ -15,4 +15,5 @@ public interface UserService {
 	public int updateUserPassWord(Long id, String password);
 	public int updateUserPassWord2(Long id, String password);
 	public int updateUserPassWord3(Long id, String password);
+	public int updateUserPassWord4(Long id, String password);
 }

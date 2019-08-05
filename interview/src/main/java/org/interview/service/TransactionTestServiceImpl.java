@@ -108,4 +108,12 @@ public class TransactionTestServiceImpl implements TransactionTestService {
 		userService.updateUserPassWord3(1L, "testNotSupported2b");
 		System.out.println("commit");
 	}
+
+	/**
+	 * MANDATORY：支持当前事务，如果没有事务则报错
+	 */
+	@Override
+	public void testMandatory() {
+		 userService.updateUserPassWord4(1L, "testMandatory");
+	}
 }

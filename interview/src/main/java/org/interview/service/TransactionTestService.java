@@ -12,4 +12,5 @@ public interface TransactionTestService {
 	public void testRequiresNew2();
 	public void testNotSupported();
 	public void testNotSupported2();
+	public void testMandatory();
 }
