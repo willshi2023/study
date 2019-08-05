@@ -1,4 +1,4 @@
-package org.interview;
+package org.interview.jdk.compare;
 
 import java.util.Comparator;
 

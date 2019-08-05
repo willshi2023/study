@@ -1,4 +1,4 @@
-package org.interview;
+package org.interview.jdk.compare;
 
 public class Domain implements Comparable<Domain> {
 	private String str;
