@@ -44,4 +44,12 @@ public class TransactionTest {
 	public void testRequired() {
 		transactionTestService.testRequired();
 	}
+	
+	/**
+	 * 测试事务类型：Nested嵌套
+	 */
+	@Test
+	public void testNested() {
+		transactionTestService.testNested();
+	}
 }

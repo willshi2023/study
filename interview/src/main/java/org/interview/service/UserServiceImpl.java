@@ -57,4 +57,19 @@ public class UserServiceImpl implements UserService {
 	    }
 	    return insertCount;
 	}
+	
+	/**
+	 * NESTED：如果当前有事务，则在当前事务内部嵌套一个事务，内部事务的回滚不影响当前事务。如果当前没有事务，就相当于REQUIRED
+	 */
+	@Transactional(propagation = Propagation.NESTED)
+	public int insertUser2(String name, String password) {
+	    User user = new User();
+	    user.setPassword(password);
+	    user.setUsername(name);
+	    int insertCount =  userMapper.insertEntity(user);
+	    if(insertCount == 1 ){
+	        throw new RuntimeException("test transaction roll back");
+	    }
+	    return insertCount;
+	}
 }

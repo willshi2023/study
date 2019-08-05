@@ -6,4 +6,5 @@ import org.springframework.stereotype.Service;
 public interface TransactionTestService {
 	public void testNever();
 	public void testRequired();
+	public void testNested();
 }

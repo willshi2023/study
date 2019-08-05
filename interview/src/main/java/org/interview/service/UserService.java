@@ -9,4 +9,5 @@ public interface UserService {
 	public void transactionTest2(int t);
 	public User findById(Long id);
 	public int insertUser(String username, String password);
+	public int insertUser2(String username, String password);
 }
