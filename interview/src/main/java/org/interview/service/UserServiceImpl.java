@@ -72,4 +72,39 @@ public class UserServiceImpl implements UserService {
 	    }
 	    return insertCount;
 	}
+
+	@Transactional(propagation = Propagation.NESTED)
+	@Override
+	public int insertUser3(String username, String password) {
+		User user = new User();
+	    user.setPassword(password);
+	    user.setUsername(username);
+	    int insertCount =  userMapper.insertEntity(user);
+	    return insertCount;
+	}
+
+	/**
+	 * REQUIRED_NEW：新建一个事务，同时将当前事务挂起
+	 */
+	@Transactional(propagation = Propagation.REQUIRES_NEW)
+	@Override
+	public int insertUser4(String username, String password) {
+		User user = new User();
+	    user.setPassword(password);
+	    user.setUsername(username);
+	    int insertCount =  userMapper.insertEntity(user);
+	    return insertCount;
+	}
+
+	/**
+	 * REQUIRES_NEW会启用一个新的事务，事务拥有完全独立的能力，
+	 * 它不依赖于当前事务，执行时会挂起当前事务，直到REQUIRES_NEW事务完成提交后才会提交当前事务，
+	 * 如果当前事务与REQUIRES_NEW 存在锁竞争，会导致死锁。
+	 */
+	@Transactional(propagation = Propagation.REQUIRES_NEW)
+	@Override
+	public int updateUserPassWord(Long id, String password) {
+		int count = userMapper.updateUserPassWord(id, password);
+		return count;
+	}
 }

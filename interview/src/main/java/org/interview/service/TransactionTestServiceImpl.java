@@ -50,4 +50,41 @@ public class TransactionTestServiceImpl implements TransactionTestService {
 	    }
 	    userMapper.updateUserPassWord(1L, "456");
 	}
+	
+	/**
+	 * NESTED子事务回滚不会影响当前事务的提交(catch回滚异常的情况下)，
+	 * 但是当前事务回滚会回滚子事务。也就是说只有当前事务提交成功了，子事务才会提交成功。
+	 */
+	@Transactional
+	public void testNested2() {
+		userService.insertUser3("abc", "123");
+	    int updateRow = userMapper.updateUserPassWord(1L, "456");
+	    if (updateRow == 1) {
+	        throw new RuntimeException("transational roll back");
+	    }
+	}
+	
+	@Transactional
+	public void testRequiresNew() {
+	    userService.insertUser4("abc", "testRequiresNew");
+	    int updateRow = userMapper.updateUserPassWord(1L, "456");
+	    if (updateRow == 1) {
+	        throw new RuntimeException("transational roll back");
+	    }
+	}
+
+	/**
+	 * REQUIRES_NEW会启用一个新的事务，事务拥有完全独立的能力，
+	 * 它不依赖于当前事务，执行时会挂起当前事务，直到REQUIRES_NEW事务完成提交后才会提交当前事务，
+	 * 如果当前事务与REQUIRES_NEW 存在锁竞争，会导致死锁。
+	 */
+	@Transactional
+	@Override
+	public void testRequiresNew2() {
+		//当前事务
+	    userMapper.updateUserPassWord(1L, "123456");
+	    //执行REQUIRES_NEW事务
+	    userService.updateUserPassWord(1L, "000000");
+	   System.out.println("commit");
+	}
 }

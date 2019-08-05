@@ -9,6 +9,6 @@ public interface UserMapper {
 
 	int insertEntity(@Param("user")User user);
 
-	void updateUserPassWord(@Param("id")Long id, @Param("password")String password);
+	int updateUserPassWord(@Param("id")Long id, @Param("password")String password);
 
 }

@@ -10,4 +10,7 @@ public interface UserService {
 	public User findById(Long id);
 	public int insertUser(String username, String password);
 	public int insertUser2(String username, String password);
+	public int insertUser3(String username, String password);
+	public int insertUser4(String username, String password);
+	public int updateUserPassWord(Long id, String password);
 }
