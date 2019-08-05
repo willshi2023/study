@@ -1,0 +1,12 @@
+package org.interview.mapper;
+
+import org.apache.ibatis.annotations.Param;
+import org.interview.entity.User;
+
+public interface UserMapper {
+
+	User findById(@Param("id")Long id);
+
+	int insertEntity(@Param("user")User user);
+
+}

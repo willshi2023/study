@@ -1,0 +1,16 @@
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  datasource:
+    url: jdbc:mysql://localhost:3306/interview?useUnicode=true&characterEncoding=UTF-8&useSSL=true
+    username: root
+    password: 
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:sqlmap/*Mapper.xml
+server:
+  port: 8080
+  context-path: /interview
