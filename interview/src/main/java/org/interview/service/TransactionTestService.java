@@ -10,4 +10,6 @@ public interface TransactionTestService {
 	public void testNested2();
 	public void testRequiresNew();
 	public void testRequiresNew2();
+	public void testNotSupported();
+	public void testNotSupported2();
 }

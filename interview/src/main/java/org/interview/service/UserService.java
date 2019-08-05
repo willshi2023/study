@@ -13,4 +13,6 @@ public interface UserService {
 	public int insertUser3(String username, String password);
 	public int insertUser4(String username, String password);
 	public int updateUserPassWord(Long id, String password);
+	public int updateUserPassWord2(Long id, String password);
+	public int updateUserPassWord3(Long id, String password);
 }

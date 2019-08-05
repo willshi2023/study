@@ -79,4 +79,21 @@ public class TransactionTest {
 	public void testRequiresNew2() {
 		transactionTestService.testRequiresNew2();
 	}
+	
+	/**
+	 * NOT_SUPPORTED：以无事务的方式执行，如果当前有事务则将其挂起
+	 */
+	@Test
+	public void testNotSupported() {
+		transactionTestService.testNotSupported();
+	}
+	
+	/**
+	 * NOT_SUPPORTED会挂起当前事务，并且NOT_SUPPORTED定义的方法内部不启用显示事务，
+	 * 如果NOT_SUPPORTED和当前事务存在锁竞争，会发生死锁。
+	 */
+	@Test
+	public void testNotSupported2() {
+		transactionTestService.testNotSupported2();
+	}
 }

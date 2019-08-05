@@ -107,4 +107,28 @@ public class UserServiceImpl implements UserService {
 		int count = userMapper.updateUserPassWord(id, password);
 		return count;
 	}
+
+	/**
+	 * NOT_SUPPORTED：以无事务的方式执行，如果当前有事务则将其挂起
+	 */
+	@Transactional(propagation = Propagation.NOT_SUPPORTED)
+	@Override
+	public int updateUserPassWord2(Long id, String password) {
+		int updateRow =  userMapper.updateUserPassWord(id,password);
+		if(updateRow ==1 ){
+		    throw new RuntimeException("roll back test");
+		}
+		return updateRow;
+	}
+
+	/**
+	 * NOT_SUPPORTED会挂起当前事务，并且NOT_SUPPORTED定义的方法内部不启用显示事务，
+	 * 如果NOT_SUPPORTED和当前事务存在锁竞争，会发生死锁。
+	 */
+	@Transactional(propagation = Propagation.NOT_SUPPORTED)
+	@Override
+	public int updateUserPassWord3(Long id, String password) {
+		int update =  userMapper.updateUserPassWord(id,password);
+	    return update;
+	}
 }
