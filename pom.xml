@@ -23,5 +23,6 @@
     <module>dubbo</module>
     <module>interview</module>
     <module>springboot</module>
+    <module>springcloud</module>
   </modules>
 </project>
