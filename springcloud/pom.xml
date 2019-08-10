@@ -55,5 +55,6 @@
     <module>service-ribbon</module>
     <module>serice-feign</module>
     <module>service-hystrix</module>
+    <module>service-feign-hystrix</module>
   </modules>
 </project>
