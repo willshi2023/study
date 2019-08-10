@@ -52,5 +52,6 @@
 	<modules>
     <module>springcloud-eureka-server</module>
     <module>service-hi</module>
+    <module>service-ribbon</module>
   </modules>
 </project>
