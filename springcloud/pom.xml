@@ -56,5 +56,6 @@
     <module>serice-feign</module>
     <module>service-hystrix</module>
     <module>service-feign-hystrix</module>
+    <module>service-zuul</module>
   </modules>
 </project>
