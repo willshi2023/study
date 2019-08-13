@@ -57,5 +57,7 @@
     <module>service-hystrix</module>
     <module>service-feign-hystrix</module>
     <module>service-zuul</module>
+    <module>service-config</module>
+    <module>service-config-client</module>
   </modules>
 </project>
