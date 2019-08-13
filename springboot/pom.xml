@@ -70,5 +70,6 @@
 	</dependencyManagement>
 	<modules>
 		<module>springboot-mybatis-multidatasource</module>
+    <module>springboot-redis</module>
   </modules>
 </project>
