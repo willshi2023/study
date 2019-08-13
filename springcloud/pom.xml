@@ -59,5 +59,7 @@
     <module>service-zuul</module>
     <module>service-config</module>
     <module>service-config-client</module>
+    <module>service-zipkin-hi</module>
+    <module>service-zipkin-miya</module>
   </modules>
 </project>
