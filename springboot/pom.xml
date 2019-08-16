@@ -71,5 +71,6 @@
 	<modules>
 		<module>springboot-mybatis-multidatasource</module>
     <module>springboot-redis</module>
+    <module>springboot-cookie</module>
   </modules>
 </project>
