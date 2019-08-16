@@ -5,11 +5,9 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/forezp/SpringcloudConfig/
-          searchPaths: respo
-        username:
-        password:
+          uri: https://github.com/qq1623299667/springcloudconfig.git
+          searchPaths: '{application}'
       label: master
+      profile: aaa
 server:
   port: 8888
-
