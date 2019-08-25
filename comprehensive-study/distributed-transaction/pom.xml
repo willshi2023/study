@@ -4,11 +4,11 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>com.study</groupId>
-    <artifactId>study</artifactId>
+    <artifactId>comprehensive-study</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>simple-study</artifactId>
-  <name>simple-study</name>
+  <artifactId>distributed-transaction</artifactId>
+  <name>distributed-transaction</name>
   <url>http://maven.apache.org</url>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
