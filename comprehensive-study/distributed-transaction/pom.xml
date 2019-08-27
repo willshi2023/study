@@ -23,5 +23,6 @@
   <packaging>pom</packaging>
   <modules>
     <module>springboot-transaction-jpa</module>
+    <module>springboot-transaction-jms</module>
   </modules>
 </project>
