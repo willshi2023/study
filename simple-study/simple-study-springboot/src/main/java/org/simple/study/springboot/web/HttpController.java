@@ -1,4 +1,4 @@
-package org.springboot.demo.web;
+package org.simple.study.springboot.web;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;

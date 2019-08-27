@@ -1,4 +1,4 @@
-package org.springboot.demo.service;
+package org.simple.study.springboot.service;
 
 import java.io.IOException;
 import java.util.ArrayList;

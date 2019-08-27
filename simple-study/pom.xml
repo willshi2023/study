@@ -25,5 +25,6 @@
     <module>simple-study-emq</module>
     <module>simple-study-jwt</module>
     <module>simple-study-websocket</module>
+    <module>simple-study-springboot</module>
   </modules>
 </project>

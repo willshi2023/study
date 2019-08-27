@@ -1,4 +1,4 @@
-package org.springboot.demo.web;
+package org.simple.study.springboot.web;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
