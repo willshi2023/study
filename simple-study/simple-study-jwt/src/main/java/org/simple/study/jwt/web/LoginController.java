@@ -1,4 +1,4 @@
-package com.study.jwt.web;
+package org.simple.study.jwt.web;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.study.jwt.service.UserService;
-import com.study.jwt.service.util.JwtUtil;
+import org.simple.study.jwt.service.UserService;
+import org.simple.study.jwt.service.util.JwtUtil;
 
 @RestController
 @RequestMapping("/login")

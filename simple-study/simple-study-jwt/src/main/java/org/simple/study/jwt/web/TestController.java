@@ -1,4 +1,4 @@
-package com.study.jwt.web;
+package org.simple.study.jwt.web;
 
 import java.util.HashMap;
 import java.util.Map;

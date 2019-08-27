@@ -1,4 +1,4 @@
-package com.study.jwt.service.util;
+package org.simple.study.jwt.service.util;
 
 import java.util.Date;
 

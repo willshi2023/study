@@ -1,4 +1,4 @@
-package com.study.jwt.service.filter;
+package org.simple.study.jwt.service.filter;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -16,8 +16,8 @@ import org.springframework.util.AntPathMatcher;
 import org.springframework.util.PathMatcher;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.study.jwt.service.UserService;
-import com.study.jwt.service.util.JwtUtil;
+import org.simple.study.jwt.service.UserService;
+import org.simple.study.jwt.service.util.JwtUtil;
 
 @Component
 public class JwtFilter extends OncePerRequestFilter {

@@ -23,5 +23,6 @@
   <packaging>pom</packaging>
   <modules>
     <module>simple-study-emq</module>
+    <module>simple-study-jwt</module>
   </modules>
 </project>
