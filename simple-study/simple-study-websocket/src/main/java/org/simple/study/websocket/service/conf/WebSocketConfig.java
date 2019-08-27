@@ -1,4 +1,4 @@
-package org.websocket.service.conf;
+package org.simple.study.websocket.service.conf;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

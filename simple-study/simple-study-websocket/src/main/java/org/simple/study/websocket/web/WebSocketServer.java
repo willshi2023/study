@@ -1,4 +1,4 @@
-package org.websocket.web;
+package org.simple.study.websocket.web;
 
 import java.io.IOException;
 import java.util.concurrent.ConcurrentHashMap;
