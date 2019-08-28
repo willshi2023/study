@@ -24,5 +24,6 @@
   <modules>
     <module>springboot-transaction-jpa</module>
     <module>springboot-transaction-jms</module>
+    <module>springboot-transaction-jta</module>
   </modules>
 </project>
