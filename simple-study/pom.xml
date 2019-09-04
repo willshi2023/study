@@ -26,5 +26,6 @@
     <module>simple-study-jwt</module>
     <module>simple-study-websocket</module>
     <module>simple-study-springboot</module>
+    <module>simple-study-annotation-aop</module>
   </modules>
 </project>
